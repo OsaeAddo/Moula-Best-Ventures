@@ -1,0 +1,18 @@
+{
+  "name": "tailwindtools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss css/tailwind-base.css -o ../static/css/tailwind/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.19"
+  }
+}
