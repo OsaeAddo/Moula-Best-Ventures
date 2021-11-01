@@ -1,0 +1,31 @@
+:root{
+    --primary: #8A1FFC;
+    --primary1: hsl(180, 66%, 49%);
+    --primary2: hsl(257, 27%, 26%);
+    --secondary: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+#services, #achievements {
+    color: #fff;
+    font-weight: bold;
+    font-size: medium;
+}
+.services-detailed .flight-img {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.services-detailed .rental-img {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.services-detailed .tracker-img {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.services-detailed .ph-img {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
