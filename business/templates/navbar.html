@@ -1,0 +1,15 @@
+{% load static %}
+{% block navbar %}
+    <nav class="mb-8">
+        <div class="logo flex justify-around items-center pt-4">
+            <img src="{% static 'images/moula-logo.jpg' %}" alt="logo | Moula Best Ventures">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-items">Home</li>
+            <li class="nav-items">Services</li>
+            <li class="nav-items">Achievements</li>
+            <li class="nav-items">Contact</li>
+        </ul>
+    </nav>
+{% endblock navbar %}

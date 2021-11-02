@@ -1,0 +1,173 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block link %}{% endblock link %}
+{% block title %}
+    <title>Moula Best Ventures | Home</title>
+{% endblock title %}
+
+
+{% block content %}
+    <header>
+        {% block navbar %}
+            {% include 'navbar.html' %}
+        {% endblock navbar %}
+    </header>
+
+    <main>
+        <section class="flex flex-col items-center text-center">
+            <div>
+                <span class="font-extrabold text-2xl text-indigo-300">
+                    We provide the best services <br>
+                     for your businesses <br> 
+                     and daily needs
+                </span>
+            </div>
+            <div class="flex justify-center items-center  mt-8" style="background: url('static/images/blob.svg') center;">
+                <img src="{% static 'images/moula1.jpg' %}" class="w-56" alt="Moula | Moula Best Ventures">
+            </div>
+        </section>
+        <section class="flex flex-col items-center my-12 px-4">
+            <div>
+                <h2 class="font-bold text-xl text-indigo-900 py-4">Services</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-center" id="services">
+                <div class="p-5 bg-blue-400 rounded-md">
+                    <span>Flight Booking</span>
+                </div>
+                <div class="p-5 bg-blue-400 rounded-md">
+                    <span>Car Rental</span>
+                </div>
+                <div class="p-5 bg-blue-400 rounded-md">
+                    <span>Pharmacy</span>
+                </div>
+                <div class="p-5 bg-blue-400 rounded-md">
+                    <span>Tracker Installation</span>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <section class="flex flex-col items-center my-12 px-4">
+                <div class="">
+                    <h2 class="font-bold text-xl text-indigo-900 py-4">Achievements</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-center" id="achievements">
+                    <div class="p-5 bg-yellow-200 rounded-md">
+                        <span class="text-2xl">80+ <br><span class="text-gray-600 text-sm">happy customers</span></span>
+                    </div>
+                    <div class="p-5 bg-red-200 rounded-md">
+                        <span class="text-2xl">100+ <br><span class="text-gray-600 text-sm">installations done</span></span>
+                    </div>
+                    <div class="p-5 bg-red-200 rounded-md">
+                        <span class="text-2xl">80+ <br><span class="text-gray-600 text-sm">rentals done</span></span>
+                    </div>
+                    <div class="p-5 bg-yellow-200 rounded-md">
+                        <span class="text-2xl">50+ <br><span class="text-gray-600 text-sm">patients treated</span></span>
+                    </div>
+                </div>
+            </section>
+            <section class="flex flex-col items-center my-12 px-4">
+                <!-- header Testimonials -->
+                <div>
+                    <h2 class="font-bold text-xl text-indigo-900 py-4">Testimonials</h2>
+                </div>
+                <!-- Images/Cards for testimonials -->
+                <div>
+                    <ul id="testimonials">
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        
+        <section class="services-detailed">
+            <section class="flex py-16">
+                <div class="w-3/5">
+                    <img class="flight-img" src="{% static 'images/flight.jpg' %}" alt="Flight Booking | Moula Best Ventures">
+                </div>
+                <div class="px-3 w-2/5">
+                    <h2 class="text-gray-400 font-bold text-sm">Flight Booking</h2>
+                    <span class="text-base text-black font-normal">
+                        Book your domestic flights <span class="text-green-200 text-lg font-bold">faster</span>, 
+                        <span class="text-green-400 text-lg font-bold"><br>securely</span> 
+                        and at <span class="text-green-600 text-lg font-bold">affordable</span>
+                        rates too!
+                    </span>
+                </div>
+            </section>
+            <section class="flex flex-row-reverse py-16">
+                <div class="w-3/5">
+                    <img class="rental-img" src="{% static 'images/car-rental.jpg' %}" alt="Car Rental | Moula Best Ventures">
+                </div>
+                <div class="px-3 w-2/5">
+                    <h2 class="text-gray-400 font-bold text-sm">Car Rental</h2>
+                    <span class="text-base text-black font-normal pb-4">
+                        Hire our cars for engagements, wedding & other 
+                        activities without hassle.
+                    </span> <br>
+                    <span 
+                        class="flex mt-6 py-1 px-4 
+                        font-bold text-sm border-2 border-solid 
+                        border-black rounded-3xl">
+                        Contact Us
+                    </span>
+                </div>
+            </section>
+            <section class="py-16">
+                <div class="flex">
+                    <div class="w-3/5">
+                        <img class="tracker-img" src="{% static 'images/car-tracker.jpeg' %}" alt="Car Tracker | Moula Best Ventures">
+                    </div>
+                    <div class="px-2 w-2/5 pt-3">
+                        <h2 class="text-gray-400 font-bold text-sm">Tracker Installation</h2>
+                        <span class="text-base text-black font-normal pb-4">
+                            Secure your vehicles with our tracking devices,
+                            view the location of the your car
+                            & easily find your vehicles in case of theft or hijacking.
+                        </span>
+                    </div>
+                </div>
+                <span 
+                    class="mt-5 ml-12 py-1 px-4 
+                    font-bold text-sm border-2 border-solid 
+                    border-black rounded-3xl">
+                    Install tracker today
+                </span>
+            </section>
+
+            <section class="flex flex-row-reverse py-16">
+                <div class="w-2/3">
+                    <img class="ph-img" src="{% static 'images/pharmacy.jpg' %}" alt="Pharmacy | Moula Best Ventures">
+                </div>
+                <div class="pr-3">
+                    <h2 class="text-gray-400 font-bold text-sm">Pharmacy</h2>
+                </div>
+            </section>
+        </section>
+        <section class="flex flex-col items-center my-12 px-4" id="contact">
+            <div>
+                <h2 class="font-bold text-xl text-indigo-900 py-4">Contact</h2>
+            </div>
+            <div class="w-full">
+                <span>
+                    For quicker responses call 
+                    <span class="pr-2">
+                        <a class="font-bold text-sm border-b-2 border-solid border-black" 
+                            href="tel:+233 24 312 6568">
+                            +233 24 312 6568 
+                        </a> 
+                    </span> 
+                    or
+                    <span class="pt-2">
+                        <a class="font-bold border-b-2 border-solid border-black" href="">whatsapp</a>
+                    </span>
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        {% block footer %}
+            {% include 'footer.html' %}
+        {% endblock footer %}
+    </footer>
+{% endblock content %}    

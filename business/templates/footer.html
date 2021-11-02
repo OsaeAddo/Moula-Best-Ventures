@@ -1,0 +1,23 @@
+{% load static %}
+{% block footer %}
+<div class="flex relative justify-between items-end bg-gray-50" style="min-height: 20vh;">
+    <div class="custom-shape-divider-bottom-1635090120">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <section class="logo z-10">
+        <a><img src="{% static 'images/moula-logo.jpg' %}" alt="logo | Moula Best Ventures"></a>
+    </section>
+    <section class="font-bold text-sm z-10" style="color: #fff;">
+        <span>&copy; Moula Best Ventures</span>
+    </section>
+    <section class="socials z-10 pb-1 pr-1">
+        <ul class="flex justify-between">
+            <li><img src="{% static 'icons/whatsapp.png' %}" alt="Whatsapp | Moula Best Ventures" style="width: 28px;"></li>
+            <li><img src="{% static 'icons/facebook.svg' %}" alt="Facebook | Moula Best Ventures" style="width: 28px;"></li>
+            <li><img src="{% static 'icons/instagram.svg' %}" alt="Instagram | Moula Best Ventures" style="width: 28px;"></li>
+        </ul>
+    </section>
+</div>
+{% endblock footer %}
