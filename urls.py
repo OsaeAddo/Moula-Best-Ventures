@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from django.conf.urls import url, include
-from django.urls import path
+from django.conf.urls import url
+from django.urls import path, include
 from aldryn_django.utils import i18n_patterns
 import aldryn_addons.urls
 
