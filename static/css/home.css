@@ -8,6 +8,9 @@
     --very-dark-blue: hsl(255, 11%, 22%);
     --very-dark-violet: hsl(260, 8%, 14%);
 }
+html {
+    scroll-behavior: smooth;
+}
 #services, #achievements {
     color: #fff;
     font-weight: bold;
