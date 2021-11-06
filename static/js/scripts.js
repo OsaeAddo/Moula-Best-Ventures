@@ -1,14 +1,18 @@
-const menuBtn = document.querySelector('.fa-bars')
-const navMenu = document.querySelector('.nav-menu')
-
-function toggleNav() {
-    navMenu.classList.toggle('show-nav-menu');
-}
+const itemsContainer = document.querySelector('.overlay')
 
 function windowOnClick (event) {
-    if (event.target === navMenu){
-        toggleNav();
+    if (event.target === itemsContainer){
+        closeNav();
     }
 }
-menuBtn.addEventListener('click', toggleNav);
+
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+  
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+
 window.addEventListener('click', windowOnClick);
