@@ -96,4 +96,9 @@ font-size: 60px;
     .menu {
         display: none;
     }
+
+    /* Main */
+    main .ceo {
+        flex-direction: row;
+        justify-content: space-around;
 }
