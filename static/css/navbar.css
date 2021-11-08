@@ -97,8 +97,4 @@ font-size: 60px;
         display: none;
     }
 
-    /* Main */
-    main .ceo {
-        flex-direction: row;
-        justify-content: space-around;
 }
