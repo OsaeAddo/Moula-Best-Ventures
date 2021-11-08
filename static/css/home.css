@@ -32,3 +32,14 @@ html {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
+
+
+
+
+@media (min-width: 570px){
+/* Main */
+    main .ceo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
