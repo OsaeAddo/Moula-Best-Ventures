@@ -8,7 +8,9 @@
     --very-dark-blue: hsl(255, 11%, 22%);
     --very-dark-violet: hsl(260, 8%, 14%);
 }
-
+header {
+    box-shadow: 1px 1px 9px grey;
+}
 .logo img {
     width: 50px;
     border-radius: 2px;
