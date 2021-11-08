@@ -98,3 +98,11 @@ font-size: 60px;
     }
 
 }
+
+@media (min-width: 700px){
+    header {
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        padding: 0;
+    }
+}
