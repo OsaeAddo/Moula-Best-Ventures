@@ -58,3 +58,42 @@ top: 20px;
 right: 45px;
 font-size: 60px;
 }
+@media (min-width: 570px){
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+        padding: 2rem;
+    }
+    .overlay .closebtn {
+        display: none;
+        
+    }
+    .overlay {
+        position: unset;
+        height: auto;
+        width: auto;
+        background-color: inherit;
+    }
+    .overlay-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+    }
+    .overlay-content a {
+        color: var(--very-dark-blue);
+        font-size: 22px;
+        font-weight: 600;
+        padding: 8px;
+    }
+    header .logo-area {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .menu {
+        display: none;
+    }
+}
