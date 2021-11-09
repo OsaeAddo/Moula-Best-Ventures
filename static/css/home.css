@@ -73,6 +73,12 @@ html {
 @media (min-width: 1100px){
     #tracker .install-tracker-text {
         left: -10rem;
-        bottom: 18.3rem;
+        bottom: 10.3rem;
     }   
+    #rental, #sales {
+        margin-left: 4rem;
+    }
+    #tracker, #flight {
+        margin-right: 4rem;
+    }
 }
