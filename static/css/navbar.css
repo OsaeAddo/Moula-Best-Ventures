@@ -103,6 +103,6 @@ header {
     header {
         justify-content: space-between;
         margin-bottom: 4rem;
-        padding: 0;
+        padding: 1rem 5rem;
     }
 }
