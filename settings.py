@@ -46,7 +46,8 @@ INSTALLED_APPS.extend([
     # Extend the INSTALLED_APPS setting by listing additional applications here
     "business.apps.BusinessConfig",
 ])
-
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
 # To see the settings that have been applied, use the Django diffsettings 
 # management command. 
 # See https://docs.divio.com/en/latest/how-to/configure-settings.html#list
