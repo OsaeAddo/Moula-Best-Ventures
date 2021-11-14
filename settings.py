@@ -28,7 +28,7 @@ INSTALLED_ADDONS = [
 #
 # for information about how this works.
 #
-if not Debug:
+if not DEBUG:
     SECURE_SSL_REDIRECT = True
 # Note that any settings you provide before the next two lines are liable to be
 # overwritten, so they should be placed *after* this section.
