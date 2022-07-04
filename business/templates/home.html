@@ -16,8 +16,8 @@
 
     <main>
         <section class="flex flex-col items-center text-center ceo">
-            <div>
-                <span class="font-extrabold text-2xl text-indigo-300">
+            <div class="text-left lg:w-1/2">
+                <span class="font-extrabold sm:text-3xl lg:text-6xl text-indigo-300 ">
                     We provide the best services <br>
                      for your business <br> 
                      and personal needs
@@ -33,19 +33,19 @@
         </section>
         <section class="flex flex-col items-center my-12 px-4 services" id="services">
             <div>
-                <h2 class="font-bold text-xl text-indigo-900 py-4">Services</h2>
+                <h2 class="font-bold text-3xl my-6 text-indigo-900 py-4 uppercase">Services</h2>
             </div>
             <div class="grid grid-cols-2 gap-4 text-center" id="service-cards">
-                <a href="/#rental" class="p-5 bg-blue-400 rounded-md">
+                <a href="/#rental" class="p-10 bg-blue-400 rounded-md">
                     <div>Car Rental</div>
                 </a>
-                <a href="/#tracker" class="p-5 bg-blue-400 rounded-md">
+                <a href="/#tracker" class="p-10 bg-blue-400 rounded-md">
                     <div>Tracker Installation</div>
                 </a>
-                <a href="/#sales" class="p-5 bg-blue-400 rounded-md">
+                <a href="/#sales" class="p-10 bg-blue-400 rounded-md">
                     <div>Car Sales</div>
                 </a>
-                <a href="/#flight" class="p-5 bg-blue-400 rounded-md">
+                <a href="/#flight" class="p-10 bg-blue-400 rounded-md">
                     <div>Flight Booking</div>
                 </a>
             </div>
@@ -53,19 +53,19 @@
         <section class="testimonials">
             <section class="flex flex-col items-center my-12 px-4" id="achievements">
                 <div class="">
-                    <h2 class="font-bold text-xl text-indigo-900 py-4">Achievements</h2>
+                    <h2 class="font-bold text-3xl my-6 text-indigo-900 py-4 uppercase">Achievements</h2>
                 </div>
                 <div class="grid grid-cols-2 gap-4 text-center" id="achievement-card">
-                    <div class="p-5 bg-yellow-200 rounded-md">
+                    <div class="p-8 bg-yellow-200 rounded-md">
                         <span class="text-2xl">80+ <br><span class="text-gray-600 text-sm">happy customers</span></span>
                     </div>
-                    <div class="p-5 bg-red-200 rounded-md">
+                    <div class="p-8 bg-red-200 rounded-md">
                         <span class="text-2xl">20+ <br><span class="text-gray-600 text-sm">installations done</span></span>
                     </div>
-                    <div class="p-5 bg-red-200 rounded-md">
+                    <div class="p-8 bg-red-200 rounded-md">
                         <span class="text-2xl">30+ <br><span class="text-gray-600 text-sm">rentals done</span></span>
                     </div>
-                    <div class="p-5 bg-yellow-200 rounded-md">
+                    <div class="p-8 bg-yellow-200 rounded-md">
                         <span class="text-2xl">5+ <br><span class="text-gray-600 text-sm">cars sold</span></span>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             <section class="flex flex-col items-center my-12 px-4 overflow-hidden" id="testimonials">
                 <!-- header Testimonials -->
                 <div>
-                    <h2 class="font-bold text-xl text-indigo-900 py-4">Testimonials</h2>
+                    <h2 class="font-bold text-3xl my-6 text-indigo-900 py-4 uppercase">Testimonials</h2>
                 </div>
                 <!-- Images/Cards for testimonials -->
                 <div class="pb-10 overflow-x-scroll w-full hide-scroll-bar">
@@ -195,8 +195,8 @@
                     <img class="rental-img" src="{% static 'images/car-rental.jpg' %}" alt="Car Rental | Moula Best Ventures">
                 </div>
                 <div class="px-3 w-2/5 texts">
-                    <h2 class="text-gray-400 font-bold text-sm">Car Rental</h2>
-                    <span class="text-base text-black font-normal pb-4">
+                    <h2 class="text-gray-400 font-bold text-sm md:text-3xl md:mb-4  uppercase">Car Rental</h2>
+                    <span class="text-base text-black font-normal pb-4 md:text-2xl md:text-left">
                         Hire our cars for engagements, wedding & other 
                         activities without hassle.
                     </span> <br>
@@ -217,7 +217,7 @@
                         <img class="tracker-img" src="{% static 'images/car-tracker.jpeg' %}" alt="Car Tracker | Moula Best Ventures">
                     </div>
                     <div class="px-2 w-2/5 pt-3 texts">
-                        <h2 class="text-gray-400 font-bold text-sm">Tracker Installation</h2>
+                        <h2 class="text-gray-400 font-bold text-sm uppercase md:text-3xl md:mb-4">Tracker Installation</h2>
                         <span class="text-base text-black font-normal pb-4">
                             Secure your vehicles with our tracking devices,
                             view the location of the your car
@@ -240,7 +240,7 @@
                     <img class="sales-img" src="{% static 'images/car-sale.jpeg' %}" alt="car sale | Moula Best Ventures">
                 </div>
                 <div class="pl-2 w-1/3 texts">
-                    <h2 class="text-gray-400 font-bold text-sm">Car Sales</h2>
+                    <h2 class="text-gray-400 font-bold text-sm uppercase md:text-3xl md:mb-4">Car Sales</h2>
                     <span class="text-base text-black font-normal pb-4">
                         Purchase your cars form Moula Best Ventures
                         and get the best deals in the market!
@@ -252,7 +252,7 @@
                     <img class="flight-img" src="{% static 'images/flight.jpg' %}" alt="Flight Booking | Moula Best Ventures">
                 </div>
                 <div class="px-3 w-2/5 texts">
-                    <h2 class="text-gray-400 font-bold text-sm">Flight Booking</h2>
+                    <h2 class="text-gray-400 font-bold text-sm uppercase md:text-3xl md:mb-4">Flight Booking</h2>
                     <span class="text-base text-black font-normal">
                         Book all your flights <span class="text-green-200 text-lg font-bold">faster</span>, 
                         <span class="text-green-400 text-lg font-bold"><br>securely</span> 

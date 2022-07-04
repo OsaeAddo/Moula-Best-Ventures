@@ -86,7 +86,7 @@ header {
     .overlay-content a {
         color: var(--very-dark-blue);
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
         padding: 8px;
     }
     header .logo-area {

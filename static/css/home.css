@@ -11,6 +11,10 @@
 html {
     scroll-behavior: smooth;
 }
+#services {
+    background-color: #d3f4f4;
+    padding-bottom: 55px;
+}
 #services, #achievements {
     color: #fff;
     font-weight: bold;
@@ -23,6 +27,7 @@ html {
 .services-detailed .rental-img {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    margin-left: auto;
 }
 .services-detailed .tracker-img {
     border-top-right-radius: 6px;
@@ -31,6 +36,7 @@ html {
 .services-detailed .sales-img {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+    margin-left: auto;
 }
 
 
@@ -89,9 +95,11 @@ html {
         bottom: 10.3rem;
     }   
     #rental, #sales {
-        margin-left: 4rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     #tracker, #flight {
-        margin-right: 4rem;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
