@@ -1,0 +1,105 @@
+:root{
+    --primary: #8A1FFC;
+    --primary1: hsl(180, 66%, 49%);
+    --primary2: hsl(257, 27%, 26%);
+    --secondary: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+html {
+    scroll-behavior: smooth;
+}
+#services {
+    background-color: #d3f4f4;
+    padding-bottom: 55px;
+}
+#services, #achievements {
+    color: #fff;
+    font-weight: bold;
+    font-size: medium;
+}
+.services-detailed .flight-img {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.services-detailed .rental-img {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-left: auto;
+}
+.services-detailed .tracker-img {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.services-detailed .sales-img {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-left: auto;
+}
+
+
+
+
+@media (min-width: 570px){
+/* Main */
+    main .ceo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #services #service-cards, #achievements #achievement-card {
+        grid-gap: 3rem;
+    }
+    .services-detailed .texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #rental .contact-us {
+        margin-top: 0;
+        text-align: center;
+        position: relative;
+        bottom: 2rem;
+    }
+    #tracker .install-tracker-text {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        left: -4rem;
+        bottom: 10rem;
+    }
+}
+@media (min-width: 900px){
+    #tracker .install-tracker-text {
+        left: -7rem;
+        bottom: 15.3rem;
+    }   
+}
+@media (min-width: 1100px){
+    #rental,
+    #tracker,
+    #sales,
+    #flight {
+        width: 80%;
+        text-align: center;
+    }
+    .rental-img,
+    .tracker-img,
+    .sales-img,
+    .flight-img {
+        width: 80%;
+    }
+    #tracker .install-tracker-text {
+        left: -10rem;
+        bottom: 10.3rem;
+    }   
+    #rental, #sales {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #tracker, #flight {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

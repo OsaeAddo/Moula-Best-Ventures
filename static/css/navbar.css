@@ -1,0 +1,108 @@
+:root{
+    --primary: #8A1FFC;
+    --primary1: hsl(180, 66%, 49%);
+    --primary2: hsl(257, 27%, 26%);
+    --secondary: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+header {
+    box-shadow: 1px 1px 9px grey;
+}
+.logo img {
+    width: 50px;
+    border-radius: 2px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px 8px 5px 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media (min-width: 570px){
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+        padding: 1rem;
+    }
+    .overlay .closebtn {
+        display: none;
+        
+    }
+    .overlay {
+        position: unset;
+        height: auto;
+        width: auto;
+        background-color: inherit;
+    }
+    .overlay-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+    }
+    .overlay-content a {
+        color: var(--very-dark-blue);
+        font-size: 16px;
+        font-weight: 600;
+        padding: 8px;
+    }
+    header .logo-area {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .menu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 700px){
+    header {
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        padding: 1rem 5rem;
+    }
+}
