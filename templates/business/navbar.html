@@ -1,0 +1,19 @@
+{% load static %}
+{% block navbar %}
+    <nav id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="/">Home</a>
+          <a href="/#services" onclick="closeNav()">Services</a>
+          <a href="/#achievements" onclick="closeNav()">Achievements</a>
+          <a href="/#testimonials" onclick="closeNav()">Testimonials</a>
+          <a href="/#contact" onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+    <div class="flex justify-between items-center px-4 mb-8 logo-area">
+        <div class="logo">
+            <img class="ml-4" src="{% static 'images/moula-logo.jpg' %}" alt="logo | Moula Best Ventures">
+        </div>
+        <span class="mr-4 menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+{% endblock navbar %}

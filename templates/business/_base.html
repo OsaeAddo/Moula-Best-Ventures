@@ -1,0 +1,38 @@
+    
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=moulabestventures.com/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=moulabestventures.com/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=moulabestventures.com/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest?v=moulabestventures.com/favicon.ico">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=moulabestventures.com/favicon.ico" color="#8237b2">
+    <link rel="shortcut icon" href="/favicon.ico?v=moulabestventures.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=moulabestventures.com/favicon.ico">
+    <meta name="theme-color" content="#c2a2d8">
+
+
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tailwind/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/testimonials.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    {% block link %}{% endblock link %}
+    {% block title %}{% endblock title %}
+</head>
+<body>
+    {% block content %}{% endblock content %}  
+    <script src="{% static 'js/scripts.js' %}"></script> 
+    <script src="{% static 'js/webdate.js' %}"></script> 
+    <script src="{% static 'js/scroll-to-reveal.js' %}"></script>  
+</body>
+</html>
