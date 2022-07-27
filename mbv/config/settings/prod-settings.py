@@ -10,8 +10,8 @@ import os
 SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-pzqirc45gpvlkh#wym^fs@!5yb$0x*8a08cy1%gzylu0xv=@92')
 
 DEBUG = 'RENDER' not in os.environ
-
-ALLOWED_HOSTS = ["www.moulabestventures.com"]
+DEBUG = True
+ALLOWED_HOSTS = []
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:    
@@ -25,9 +25,9 @@ DATABASES = {
         conn_max_age=600
     )
 }
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static'
-# ]
-if not DEBUG:
-    STATIC_ROOT = BASE_DIR / 'staticfiles'
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+# if not DEBUG:
+#     STATIC_ROOT = BASE_DIR / 'staticfiles'
+#     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
